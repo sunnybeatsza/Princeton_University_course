@@ -1,3 +1,5 @@
+import javax.swing.plaf.metal.MetalTheme;
+
 public class Main {
     //   Uniform random numbers.
     //   Write a program that prints five uniform random numbers between 0 and 1,
@@ -33,11 +35,18 @@ public class Main {
         System.out.println(randomNumber5);
         System.out.println("The average is: " + averageNumber);
 
-    //  The computer should determine the which number is the lowest
+    //  The computer should determine which number is the lowest
         double lowestNumber = Math.min(randomNumber1, randomNumber2);
         lowestNumber = Math.min(lowestNumber, randomNumber3);
         lowestNumber = Math.min(lowestNumber, randomNumber4);
         lowestNumber = Math.min(lowestNumber, randomNumber5);
         System.out.println("The lowest number is: " + lowestNumber);
+
+    //  The computer should determine which number is the highest
+        double highestNumber = Math.max(randomNumber1, randomNumber2);
+        highestNumber = Math.max(highestNumber, randomNumber3);
+        highestNumber = Math.max(highestNumber, randomNumber4);
+        highestNumber = Math.max(highestNumber, randomNumber5);
+        System.out.println("The highest number is: " + highestNumber);
     }
 }
